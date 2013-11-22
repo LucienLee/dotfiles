@@ -1,0 +1,35 @@
+
+[core]
+    editor = vim
+    excludesfile = ~/.local.gitignore
+
+[color]
+    ui = true
+
+[alias]
+    a = add
+    ad = add
+    b = branch
+    br = branch
+    c = commit
+    cm = commit
+    co = checkout
+    d = diff
+    df = diff
+    f = fetch
+    l = log
+    lg = log
+    m = merge
+    mg = merge
+    p = push
+    r = remote
+    rt = remote
+    s = status
+    st = status
+
+[user]
+    name = Lucien Lee
+    email = lkiral7903@gmail.com
+
+[include]
+    path = ~/.local.gitconfig
