@@ -12,7 +12,7 @@ alias mysql='/usr/local/mysql/bin/mysql'
 alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
 
 #open application
-alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox'
 alias mou="open -a mou"
