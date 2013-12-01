@@ -1,7 +1,6 @@
-
 [core]
     editor = vim
-    excludesfile = ~/.local.gitignore
+    excludesfile = ~/.gitignore_global
 
 [color]
     ui = true
@@ -13,6 +12,7 @@
     br = branch
     c = commit
     cm = commit
+    ci = commit
     co = checkout
     d = diff
     df = diff
