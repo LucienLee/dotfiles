@@ -17,6 +17,10 @@ PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
 #enables color for iTerm
 export TERM=xterm-color
 
+#bash-completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
 
 # Source settings for bash
 if [ -r ~/.bashrc ]

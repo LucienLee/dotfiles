@@ -11,6 +11,9 @@ alias mysqlstart='sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart'
 alias mysql='/usr/local/mysql/bin/mysql'
 alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
 
+#Postgres
+#export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
 #open application
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
@@ -51,3 +54,6 @@ function csie {
         ssh r02944010@linux15.csie.org
     fi
 }
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
