@@ -37,7 +37,8 @@ alias g="git"
 alias gs="git status"
 alias gca='git commit -a'
 alias gcm='git commit'
-alias gcam'git comit -am'
+alias gcam='git commit -am'
+alias gcma="git commit -am"
 alias gco='git checkout'
 alias gd='git diff'
 
