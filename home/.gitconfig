@@ -26,6 +26,7 @@
     rt = remote
     s = status
     st = status
+    amend = commit --amend
 
 [user]
     name = Lucien Lee
