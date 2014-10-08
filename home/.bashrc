@@ -15,7 +15,7 @@ alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
 #export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 
 #open application
-alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox'
 alias mou="open -a mou"
@@ -42,6 +42,9 @@ alias gcma="git commit -am"
 alias gco='git checkout'
 alias gd='git diff'
 
+#python
+alias py="python"
+
 #grep option
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;31' # green for matches
@@ -57,6 +60,7 @@ function csie {
         ssh r02944010@linux15.csie.org
     fi
 }
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
