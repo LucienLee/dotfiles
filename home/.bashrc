@@ -60,6 +60,8 @@ function csie {
         ssh r02944010@linux15.csie.org
     fi
 }
+#secret key
+source ~/Dropbox/key/.secret.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
