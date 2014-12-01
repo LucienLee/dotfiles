@@ -29,8 +29,8 @@
     amend = commit --amend
 
 [user]
-    name = Lucien Lee
-    email = lkiral7903@gmail.com
+	name = Lucien Lee
+	email = lkiral7903@gmail.com
 
 [include]
     path = ~/.local.gitconfig
@@ -42,3 +42,7 @@
 	trustExitCode = true
 [url "https://"]
 	insteadOf = git://
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
