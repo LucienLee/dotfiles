@@ -11,8 +11,9 @@ CLICOLOR=1
 LSCOLORS=gxfxcxdxbxegedabagacad
 
 #sets up theprompt color (currently a green similar to linux terminal)
-#export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
-PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
+export PS1="\[\e[00;32m\]\u@\h\[\e[0m\]\[\e[00;37m\] \[\e[0m\]\[\e[00;33m\][\w]\[\e[0m\]\[\e[00;34m\]:\$(__git_ps1)\\$\[\e[0m\]\[\e[00;37m\] \[\e[0m\]"
+
+
 
 #enables color for iTerm
 export TERM=xterm-color
