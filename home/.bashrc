@@ -61,7 +61,7 @@ function csie {
     fi
 }
 #secret key
-source ~/Dropbox/key/.secret.sh
+source ~/Dropbox/Config/.secret.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
