@@ -47,6 +47,7 @@ alias gd='git diff'
 
 #python
 alias py="python"
+alias py3="python3"
 
 #grep option
 export GREP_OPTIONS='--color=auto'
