@@ -1,6 +1,9 @@
 #homebrew path
 export PATH=/usr/local/bin:$PATH
 
+#z - jump around
+. `brew --prefix`/etc/profile.d/z.sh
+
 #nvm
 source ~/.nvm/nvm.sh
 #nvm bash completion
