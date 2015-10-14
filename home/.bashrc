@@ -5,7 +5,8 @@ export PATH=/usr/local/bin:$PATH
 . `brew --prefix`/etc/profile.d/z.sh
 
 #nvm
-source ~/.nvm/nvm.sh
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 #nvm bash completion
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
