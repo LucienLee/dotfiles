@@ -5,6 +5,27 @@
 [color]
     ui = true
 
+[color "status"]
+    added = blue
+    changed = green
+    untracked = cyan reverse
+    branch = magenta
+
+[color "branch"]
+    current = yellow black ul
+
+[color "interactive"]
+    prompt = green
+
+[color "diff"]
+    plain = normal
+    meta = bold
+    frag = cyan
+    old = red
+    new = green
+    commit = yellow
+    whitespace = normal red
+
 [alias]
     a = add
     ad = add
@@ -46,3 +67,4 @@
 	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
+
