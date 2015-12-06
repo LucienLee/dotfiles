@@ -35,6 +35,7 @@ alias ..='cd ..'
 alias ...='cd ..;cd ..'
 alias md='mkdir'
 alias cl='clear'
+alias localip='ifconfig |grep inet'
 
 #git
 alias g="git"
