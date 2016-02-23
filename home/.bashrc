@@ -23,6 +23,7 @@ alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox'
 alias mou="open -a mou"
+alias byword="open -a byword"
 
 # Listing, directories, and motion
 alias ll="ls -alrtF --color"
