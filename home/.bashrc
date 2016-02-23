@@ -10,6 +10,9 @@ source $(brew --prefix nvm)/nvm.sh
 #nvm bash completion
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
+#imagemagick
+gifloop(){ convert -loop 0 "$@" "$@"; }
+
 #mysql
 alias mysqlstart='sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart'
 alias mysql='/usr/local/mysql/bin/mysql'
