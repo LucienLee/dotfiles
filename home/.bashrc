@@ -75,3 +75,8 @@ source ~/Dropbox/Config/.secret.sh
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+### Auto run exec in current directory
+export PATH="$PATH:."
+
+### Set cd path
+export CDPATH=".:..:~"
