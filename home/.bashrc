@@ -43,12 +43,17 @@ alias localip='ifconfig |grep inet'
 #git
 alias g="git"
 alias gs="git status"
+alias gcl='git clone'
 alias gca='git commit -a'
 alias gcm='git commit -m'
 alias gcam='git commit -am'
 alias gcma="git commit -am"
 alias gco='git checkout'
 alias gd='git diff'
+alias gp='git push'
+alias gl='git pull'
+alias gpp='git pull && git push'
+alias gdel='git branch -D'
 
 #python
 alias py="python"
