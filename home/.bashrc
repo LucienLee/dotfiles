@@ -59,6 +59,25 @@ alias gdel='git branch -D'
 alias py="python"
 alias py3="python3"
 
+#npn
+alias ni='npm install'
+alias nis='npm install --save'
+alias nid='npm install --save-dev'
+alias nisd='npm install --save-dev'
+alias nu='npm uninstall'
+alias nus='npm uninstall --save'
+alias nud='npm uninstall --save-dev'
+alias nusd='npm uninstall --save-dev'
+alias np='npm publish'
+alias nup='npm unpublish'
+alias nlk='npm link'
+alias nod='npm outdated'
+alias nrb='npm rebuild'
+alias nud='npm update'
+alias nr='npm run'
+alias nls='npm list'
+alias nlsg='npm list --global'
+
 #grep option
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;31' # green for matches
