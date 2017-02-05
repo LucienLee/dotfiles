@@ -54,6 +54,7 @@ alias gp='git push'
 alias gl='git pull'
 alias gpp='git pull && git push'
 alias gdel='git branch -D'
+alias gus='git reset HEAD'
 
 #python
 alias py="python"
