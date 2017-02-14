@@ -1,5 +1,6 @@
 #homebrew path
 export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
 
 #z - jump around
 . `brew --prefix`/etc/profile.d/z.sh
