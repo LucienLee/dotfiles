@@ -35,11 +35,11 @@ alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox'
 alias byword="open -a byword"
 
 # Listing, directories, and motion
-alias ll="ls -alrtF --color"
+alias ll="ls -alrtFG"
 alias la="ls -A"
 alias l="ls -CF"
-alias dir='ls --color=auto --format=vertical'
-alias vdir='ls --color=auto --format=long'
+alias dir='ls -G1'
+alias vdir='ls -G@'
 alias m='less'
 alias ..='cd ..'
 alias ...='cd ..;cd ..'
