@@ -11,8 +11,14 @@ source $(brew --prefix nvm)/nvm.sh
 #nvm bash completion
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
-#imagemagick
-gifloop(){ convert -loop 0 "$@" "$@"; }
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### Auto run exec in current directory
+export PATH="$PATH:."
+
+### Set cd path
+export CDPATH=".:..:~"
 
 #mysql
 alias mysqlstart='sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart'
@@ -80,6 +86,11 @@ alias nr='npm run'
 alias nls='npm list'
 alias nlsg='npm list --global'
 
+#yarn
+alias yna='yarn add'
+alias ynap='yarn add --peer'
+alias ynad='yarn add --dev'
+
 #grep option
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;31' # green for matches
@@ -87,7 +98,13 @@ export GREP_COLOR='1;31' # green for matches
 # Use o as open
 o() { test $# = 0 && open . || open "$@"; }
 
-#---
+#imagemagick
+gifloop(){ convert -loop 0 "$@" "$@"; }
+
+#secret key
+source ~/Dropbox/Config/.secret.sh
+
+#csie login
 function csie {
     if [ -n "$1" ]; then
         ssh r02944010@linux"$1".csie.org
@@ -95,14 +112,3 @@ function csie {
         ssh r02944010@linux15.csie.org
     fi
 }
-#secret key
-source ~/Dropbox/Config/.secret.sh
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-### Auto run exec in current directory
-export PATH="$PATH:."
-
-### Set cd path
-export CDPATH=".:..:~"
