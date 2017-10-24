@@ -24,11 +24,6 @@ export PATH="$PATH:."
 ### Set cd path
 export CDPATH=".:..:~"
 
-#mysql
-alias mysqlstart='sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart'
-alias mysql='/usr/local/mysql/bin/mysql'
-alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
-
 #Postgres
 #export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 
