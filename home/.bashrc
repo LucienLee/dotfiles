@@ -15,6 +15,10 @@ source $(brew --prefix nvm)/nvm.sh
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
+#go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
