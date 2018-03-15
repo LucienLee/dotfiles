@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Open application
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox'
+alias byword="open -a byword"
+
+# Open iOS Simulator
+alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app"

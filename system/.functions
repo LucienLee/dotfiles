@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Create a new directory and enter it
+function mkd() {
+	mkdir -p "$@" && cd "$_";
+}
+
+# Use o as open
+function o() { test $# = 0 && open . || open "$@"; }
+
+#imagemagick
+function gifloop() { convert -loop 0 "$@" "$@"; }
+
+#csie login
+function csie {
+    if [ -n "$1" ]; then
+        ssh r02944010@linux"$1".csie.org
+    else
+        ssh r02944010@linux15.csie.org
+    fi
+}
+
