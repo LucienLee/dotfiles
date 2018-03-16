@@ -47,7 +47,13 @@
   rt = remote
   s = status
   st = status
+  rb = rebase
+  rbc = rebase --continue
+  rbs = rebase --skip
+  rbi = rebase --interactive @{upstream}
   amend = commit --amend
+  discard = checkout --
+  get = checkout --track
 
 [user]
 	name = Lucien Lee
