@@ -35,6 +35,7 @@
   cm = commit
   ci = commit
   co = checkout
+  cob = checkout -br
   d = diff
   df = diff
   f = fetch
