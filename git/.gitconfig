@@ -55,6 +55,10 @@
   amend = commit --amend
   discard = checkout --
   get = checkout --track
+  sm = submodule
+  smu = submodule update
+  smui = submodule update --init
+  smuir = submodule update --init --recursive
 
 [user]
 	name = Lucien Lee
