@@ -13,7 +13,7 @@ alias md='mkdir'
 alias cl='clear'
 alias localip='ifconfig |grep inet'
 
-#git
+# git
 alias g="git"
 alias gs="git status"
 alias gcl='git clone'
@@ -28,6 +28,11 @@ alias gl='git pull'
 alias gpp='git pull && git push'
 alias gdel='git branch -D'
 alias gus='git reset HEAD'
+alias reset-git-ssh='export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa";
+                     source ~/.dotfiles/system/.prompt'
+alias set-thunder-git-ssh='export GIT_SSH_COMMAND="ssh -i ~/.ssh/thunder_rsa";
+                           export PS1="${PS1}\[\033[48;5;8m\]⚡️>\[$(tput sgr0)\] "'
+alias thunder-git-clone='git clone --config user.name="Lucien Lee" --config user.email=lucien@thundertoken.tw $@'
 
 #python
 alias py="python"
