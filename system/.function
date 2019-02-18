@@ -20,3 +20,21 @@ function csie {
     fi
 }
 
+#
+function switch_git_ssh() {
+  local thunder_ssh="ssh -i ~/.ssh/thunder_rsa";
+  local origin_ssh="ssh -i ~/.ssh/id_rsa";
+  case $1 in
+    thunder)
+      if [ "$GIT_SSH_COMMAND" != "$thunder_ssh" ]; then 
+        export GIT_SSH_COMMAND=$thunder_ssh
+        export PS1="${PS1}\[\033[48;5;8m\]⚡️>\[$(tput sgr0)\] "
+      fi
+      ;;
+    origin | *)
+      export GIT_SSH_COMMAND=$origin_ssh
+      source ~/.dotfiles/system/.prompt
+      ;;
+  esac
+}
+complete -W "origin thunder" switch_git_ssh
