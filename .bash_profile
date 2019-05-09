@@ -11,7 +11,7 @@ else
 fi
 
 #  Source the dotfiles
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,prompt}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,env.*,alias,completion,prompt}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
