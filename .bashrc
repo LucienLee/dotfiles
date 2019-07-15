@@ -11,6 +11,9 @@ export NVM_DIR="$HOME/.nvm"
 #nvm bash completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
+# yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 # ruby
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
@@ -34,3 +37,5 @@ export GREP_COLOR='1;31' # green for matches
 
 # secret key
 source ~/Dropbox/Config/.secret.sh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
