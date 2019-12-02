@@ -28,11 +28,17 @@ alias gl='git pull'
 alias gpp='git pull && git push'
 alias gdel='git branch -D'
 alias gus='git reset HEAD'
+
+# ssh
 alias reset-git-ssh='export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa";
                      source ~/.dotfiles/system/.prompt'
 alias set-thunder-git-ssh='export GIT_SSH_COMMAND="ssh -i ~/.ssh/thunder_rsa";
                            export PS1="${PS1}\[\033[48;5;8m\]⚡️>\[$(tput sgr0)\] "'
 alias thunder-git-clone='git clone --config user.name="Lucien Lee" --config user.email=lucien@thundertoken.tw $@'
+alias set-scalable-git-ssh='export GIT_SSH_COMMAND="ssh -i ~/.ssh/scalable_rsa";
+                           export PS1="${PS1}🖨  \[\033[38;5;6m\]>\[$(tput sgr0)\] "'
+alias scalable-git-clone='git clone --config user.name="Lucien Lee" --config user.email=lucien.lee@scalablepress.com $@'
+
 
 #python
 alias py="python"

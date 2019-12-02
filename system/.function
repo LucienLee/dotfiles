@@ -22,13 +22,13 @@ function csie {
 
 #
 function switch_git_ssh() {
-  local thunder_ssh="ssh -i ~/.ssh/thunder_rsa";
+  local scalable_ssh="ssh -i ~/.ssh/scalable_rsa";
   local origin_ssh="ssh -i ~/.ssh/id_rsa";
   case $1 in
-    thunder)
-      if [ "$GIT_SSH_COMMAND" != "$thunder_ssh" ]; then 
-        export GIT_SSH_COMMAND=$thunder_ssh
-        export PS1="${PS1}\[\033[48;5;8m\]⚡️>\[$(tput sgr0)\] "
+    scalable)
+      if [ "$GIT_SSH_COMMAND" != "$scalable_ssh" ]; then
+        export GIT_SSH_COMMAND=$scalable_ssh
+        export PS1="${PS1}🖨  \[\033[38;5;6m\]>\[$(tput sgr0)\] "
       fi
       ;;
     origin | *)
@@ -37,4 +37,4 @@ function switch_git_ssh() {
       ;;
   esac
 }
-complete -W "origin thunder" switch_git_ssh
+complete -W "origin scalable" switch_git_ssh
