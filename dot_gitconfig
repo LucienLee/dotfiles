@@ -1,0 +1,92 @@
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore_global
+
+[color]
+  ui = true
+
+[color "status"]
+  added = blue
+  changed = green
+  untracked = cyan reverse
+  branch = magenta
+
+[color "branch"]
+  current = yellow black ul
+
+[color "interactive"]
+  prompt = green
+
+[color "diff"]
+  plain = normal
+  meta = bold
+  frag = cyan
+  old = red
+  new = green
+  commit = yellow
+  whitespace = normal red
+
+[alias]
+  a = add
+  ad = add
+  b = branch
+  br = branch
+  c = commit
+  cm = commit
+  ci = commit
+  co = checkout
+  cob = checkout -br
+  d = diff
+  df = diff
+  f = fetch
+  l = log
+  lg = log
+  m = merge
+  mg = merge
+  p = push
+  r = remote
+  rt = remote
+  s = status
+  st = status
+  rb = rebase
+  rbc = rebase --continue
+  rbs = rebase --skip
+  rbi = rebase --interactive @{upstream}
+  amend = commit --amend
+  discard = checkout --
+  get = checkout --track
+  sm = submodule
+  smu = submodule update
+  smui = submodule update --init
+  smuir = submodule update --init --recursive
+
+[user]
+	name = Lucien Lee
+	email = lkiral7903@gmail.com
+
+[include]
+    path = ~/.local.gitconfig
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+[url "https://"]
+	insteadOf = git://
+
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+
+[merge "ours"]
+	driver = true
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
